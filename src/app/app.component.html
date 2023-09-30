@@ -1,32 +1,5 @@
-<h1>{{title | uppercase}}</h1>
+<app-navbar></app-navbar>
 
-<h3>Today is {{today | date: 'dd/MM/yyyy'}}</h3>
+<app-home></app-home>
 
-<img [src]="imageUrl" alt="" [width]="imageWidth" [height]="imageHeight">
-
-<p [class]="multipleClasses">
-    This is a paragraph to test the class and style binding - class
-</p>
-
-<p [style]="multipleStyles">
-    This is a paragraph to test the class and style binding - style
-</p>
-
-<p [style.background-color]="bgcolor" [style.color]="forecolor">
-    This is a paragraph to test the class and style binding - style.background-color & style.color
-</p>
-
-<!-- <p>Price: {{price | currency}}</p>
-
-<span>Selling price: {{sellingPrice | currency}}, profit: {{sellingPrice | profit | currency}}}</span>
-
-<hr>
-
-<button type="button" [attr.aria-label]="attributeValue">Sample Button</button> -->
-
-<button (click)="setTimeToNow()">Set time to now</button>
-<p>Time now: {{timeNow}}</p>
-
-<input #color type="text" placeholder="Type your color">
-<button (click)="setTextColor(color.value)">Set text color</button>
-<p [style.color]="textColor">This is just a sample text</p>
+<app-footer></app-footer>
