@@ -15,6 +15,8 @@ import { ModalComponent } from './components/modal/modal.component';
 import { ProfitPipe } from './pipes/profit.pipe';
 import { FormsModule } from '@angular/forms';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutesModule } from './modules/app.routes';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { DetailsActorsComponent } from './components/details-actors/details-acto
   ],
   imports: [
     BrowserModule,
+    AppRoutesModule,    
     FormsModule
   ],
   providers: [], 
