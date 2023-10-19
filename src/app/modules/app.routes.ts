@@ -7,6 +7,7 @@ import { DetailsReviewsComponent } from '../components/details-reviews/details-r
 import { DetailsComponent } from '../components/details/details.component';
 import { SearchComponent } from '../components/search/search.component';
 import { CommonModule } from '@angular/common';
+import { NotFoundComponent } from '../components/not-found/not-found.component';
 
 const routes: Routes =
     [
@@ -17,7 +18,10 @@ const routes: Routes =
         {path: 'details/movies/:id', component: DetailsMoviesComponent},
         {path: 'details/reviews/id', component: DetailsReviewsComponent},
         // {path: 'feedback', component: FeedbackComponent},
-        {path: 'search/:movieTitle', component: SearchComponent}
+        {path: 'search/:movieTitle', component: SearchComponent},
+
+        // 404 page for non-existing urls
+        {path:'**', component: NotFoundComponent}
     ];
 
 @NgModule({
