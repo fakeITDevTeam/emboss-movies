@@ -18,6 +18,15 @@ const routes: Routes =
         {path: 'details/movies/:id', component: DetailsMoviesComponent},
         {path: 'details/reviews/id', component: DetailsReviewsComponent},
         // {path: 'feedback', component: FeedbackComponent},
+
+        // START: nested routes
+        // {path: 'details/:id', component: DetailsComponent, children: [
+        //     {path: 'actors', component: DetailsActorsComponent},
+        //     {path: 'movies', component: DetailsMoviesComponent},
+        //     {path: 'reviews', component: DetailsReviewsComponent}
+        // ]},
+        // END: nested routes
+
         {path: 'search/:movieTitle', component: SearchComponent},
 
         // 404 page for non-existing urls

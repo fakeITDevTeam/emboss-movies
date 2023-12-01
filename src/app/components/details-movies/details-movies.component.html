@@ -1,29 +1,5 @@
-<figure class="figure">
-    <img src="..." class="figure-img img-fluid rounded img-thumbnail" style="max-width: 120px;" alt="...">
-    <figcaption class="figure-caption">Movie #1 Title</figcaption>
-    <figcaption class="figure-caption"><i class="bi bi-star"></i>&nbsp;<strong>9.1/10</strong></figcaption>    
-</figure>
-
-<figure class="figure">
-    <img src="..." class="figure-img img-fluid rounded img-thumbnail" style="max-width: 120px;" alt="...">
-    <figcaption class="figure-caption">Movie #2 Title</figcaption>
-    <figcaption class="figure-caption"><i class="bi bi-star"></i>&nbsp;<strong>9.1/10</strong></figcaption>    
-</figure>
-
-<figure class="figure">
-    <img src="..." class="figure-img img-fluid rounded img-thumbnail" style="max-width: 120px;" alt="...">
-    <figcaption class="figure-caption">Movie #3 Title</figcaption>
-    <figcaption class="figure-caption"><i class="bi bi-star"></i>&nbsp;<strong>9.1/10</strong></figcaption>    
-</figure>
-
-<figure class="figure">
-    <img src="..." class="figure-img img-fluid rounded img-thumbnail" style="max-width: 120px;" alt="...">
-    <figcaption class="figure-caption">Movie #4 Title</figcaption>
-    <figcaption class="figure-caption"><i class="bi bi-star"></i>&nbsp;<strong>9.1/10</strong></figcaption>    
-</figure>
-
-<figure class="figure">
-    <img src="..." class="figure-img img-fluid rounded img-thumbnail" style="max-width: 120px;" alt="...">
-    <figcaption class="figure-caption">Movie #5 Title</figcaption>
-    <figcaption class="figure-caption"><i class="bi bi-star"></i>&nbsp;<strong>9.1/10</strong></figcaption>    
+<figure class="figure" *ngFor="let similarMovie of similarMovies">
+    <img [src]="similarMovie.imageUrl" class="figure-img img-fluid rounded img-thumbnail" style="max-width: 120px;" alt="...">
+    <figcaption class="figure-caption">{{similarMovie.title}}</figcaption>
+    <figcaption class="figure-caption"><i class="bi bi-star"></i>&nbsp;<strong>{{similarMovie.rate}}/10</strong></figcaption>    
 </figure>

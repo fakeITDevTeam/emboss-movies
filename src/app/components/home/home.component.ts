@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 // import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,14 +7,34 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  // public movieId = '';
+export class HomeComponent implements OnInit {
 
-  // constructor(private _activatedRoute: ActivatedRoute) {
-  //   this._activatedRoute.params.subscribe((p) => {
-  //     this.movieId = p["id"];
+  /**
+   *
+   */
+  constructor(private httpClient: HttpClient) {        
+  }
+  
+  isActive = true;
+  fanFavoriteMovies: any[] = [];
+  topMovies: any[] = [];
+  
+  ngOnInit(): void {
+    this.getFanFavoriteMovies();
+    this.getTopMovies();
+  }
 
-  //     console.log('Movie Id = ' + this.movieId);
-  //   })
-  // }
+  getFanFavoriteMovies() {
+    this.httpClient.get<any[]>('assets/data/fanFavoriteMovies.json')
+    .subscribe((data:any[]) => {
+      this.fanFavoriteMovies = data;
+    });
+  }
+
+  getTopMovies() {
+    this.httpClient.get<any[]>('assets/data/topMovies.json')
+    .subscribe((data:any[]) => {
+      this.topMovies = data;
+    });
+  }
 }

@@ -18,6 +18,11 @@ import { DetailsActorsComponent } from './components/details-actors/details-acto
 import { RouterModule } from '@angular/router';
 import { AppRoutesModule } from './modules/app.routes';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HeaderDirective } from './directives/header.directive';
+import { MyIfDirective } from './directives/my-if.directive';
+
+// import HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,12 +41,17 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     DetailsActorsComponent,
     
     //pipes
-    ProfitPipe
+    ProfitPipe,
+
+    //directives
+    HeaderDirective,
+    MyIfDirective
   ],
   imports: [
     BrowserModule,
     AppRoutesModule,    
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [], 
   bootstrap: [AppComponent]
