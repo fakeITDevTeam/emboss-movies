@@ -1,6 +1,6 @@
 [
     {
-        "imageUrl": "../../../assets/images/card-image.png",
+        "imageUrl": "../../../assets/images/ghibli_kikis.delivery.service.01.png",
         "title": "Movie #1 Title",
         "actors": "Movie #1 Actors",
         "year": "2023",
@@ -8,7 +8,7 @@
         "rank": 1
     },
     {
-        "imageUrl": "../../../assets/images/card-image.png",
+        "imageUrl": "../../../assets/images/ghibli_the.wind.rises.01.png",
         "title": "Movie #2 Title",
         "actors": "Movie #2 Actors",
         "year": "2023",
@@ -16,7 +16,31 @@
         "rank": 2
     },
     {
-        "imageUrl": "../../../assets/images/card-image.png",
+        "imageUrl": "../../../assets/images/ghibli_my.neighbor.totoro.01.png",
+        "title": "Movie #3 Title",
+        "actors": "Movie #3 Actors",
+        "year": "2023",
+        "rate": 9.1,
+        "rank": 3
+    },
+    {
+        "imageUrl": "../../../assets/images/ghibli_whisper.of.the.heart.png",
+        "title": "Movie #3 Title",
+        "actors": "Movie #3 Actors",
+        "year": "2023",
+        "rate": 9.1,
+        "rank": 3
+    },
+    {
+        "imageUrl": "../../../assets/images/ghibli_only.yesterday.png",
+        "title": "Movie #3 Title",
+        "actors": "Movie #3 Actors",
+        "year": "2023",
+        "rate": 9.1,
+        "rank": 3
+    },
+    {
+        "imageUrl": "../../../assets/images/ghibli_howls.moving.castle.01.png",
         "title": "Movie #3 Title",
         "actors": "Movie #3 Actors",
         "year": "2023",

@@ -1,18 +1,18 @@
 [
     {
-        "imageUrl": "../../../assets/images/card-image.png",
-        "title": "Movie #1 Title",
-        "actors": "Movie #1 Actors",
+        "imageUrl": "../../../assets/images/ghibli_my.neighbor.totoro.01.png",
+        "title": "Movie #3 Title",
+        "actors": "Movie #3 Actors",
         "year": "2023",
-        "rate": 9.5,
-        "rank": 1
+        "rate": 9.1,
+        "rank": 3
     },
     {
-        "imageUrl": "../../../assets/images/card-image.png",
-        "title": "Movie #2 Title",
-        "actors": "Movie #2 Actors",
+        "imageUrl": "../../../assets/images/ghibli_whisper.of.the.heart.png",
+        "title": "Movie #3 Title",
+        "actors": "Movie #3 Actors",
         "year": "2023",
-        "rate": 9.2,
-        "rank": 2
+        "rate": 9.1,
+        "rank": 3
     }
 ]
