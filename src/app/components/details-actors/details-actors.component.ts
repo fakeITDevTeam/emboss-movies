@@ -1,100 +1,27 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-details-actors',
   templateUrl: './details-actors.component.html',
   styleUrls: ['./details-actors.component.css']
 })
-export class DetailsActorsComponent {
-  movieActors: any[] = [
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
+export class DetailsActorsComponent implements OnInit {
+    
+  movieActors: any[] = [];
 
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
+  constructor(private httpClient: HttpClient) {    
+  }
 
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
+  ngOnInit(): void {
+    this.loadMovieActors();
+  }
+  loadMovieActors() {
+    this.httpClient.get<any[]>('assets/data/movieActors.json')
+      .subscribe((data: any[]) => {
+        console.log('Summary - ', data);
 
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    },
-
-    {
-      imageUrl: '../../../assets/images/actor-image.jpg',
-      name: 'Actor name',
-      role: 'role'
-    }
-  ]
+        this.movieActors = data;        
+      })
+  }
 }

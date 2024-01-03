@@ -25,24 +25,48 @@
     },
     {
         "imageUrl": "../../../assets/images/ghibli_whisper.of.the.heart.png",
-        "title": "Movie #3 Title",
-        "actors": "Movie #3 Actors",
+        "title": "Movie #4 Title",
+        "actors": "Movie #4 Actors",
         "year": "2023",
         "rate": 9.1,
         "rank": 3
     },
     {
         "imageUrl": "../../../assets/images/ghibli_only.yesterday.png",
-        "title": "Movie #3 Title",
-        "actors": "Movie #3 Actors",
+        "title": "Movie #5 Title",
+        "actors": "Movie #5 Actors",
         "year": "2023",
         "rate": 9.1,
         "rank": 3
     },
     {
         "imageUrl": "../../../assets/images/ghibli_howls.moving.castle.01.png",
-        "title": "Movie #3 Title",
-        "actors": "Movie #3 Actors",
+        "title": "Movie #6 Title",
+        "actors": "Movie #6 Actors",
+        "year": "2023",
+        "rate": 9.1,
+        "rank": 3
+    },
+    {
+        "imageUrl": "../../../assets/images/ghibli_pom.poko.01.png",
+        "title": "Movie #7 Title",
+        "actors": "Movie #7 Actors",
+        "year": "2023",
+        "rate": 9.1,
+        "rank": 3
+    },
+    {
+        "imageUrl": "../../../assets/images/ghibli_porco.rosso.01.png",
+        "title": "Movie #8 Title",
+        "actors": "Movie #8 Actors",
+        "year": "2023",
+        "rate": 9.1,
+        "rank": 3
+    },
+    {
+        "imageUrl": "../../../assets/images/ghibli_my.neighbors.the.yamadas.01.png",
+        "title": "Movie #9 Title",
+        "actors": "Movie #9 Actors",
         "year": "2023",
         "rate": 9.1,
         "rank": 3

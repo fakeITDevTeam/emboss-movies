@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "../../../assets/images/ghibli_kikis.delivery.service.01.png",
+    "title": "Kiki's Delivery Service",
+    "description": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+    "trailerLink": "#exampleModal",
+    "detailsLink": "/details/1"
+  },
+  {
+    "id": 2,
+    "imageUrl": "../../../assets/images/ghibli_the.wind.rises.01.png",
+    "title": "The Wind Rises",
+    "description": "A look at the life of Jiro Horikoshi, the man who designed Japanese fighter planes during World War II.",
+    "trailerLink": "#exampleModal",
+    "detailsLink": "/details/2"
+  }
+]

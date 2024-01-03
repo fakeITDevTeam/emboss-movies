@@ -1,0 +1,7 @@
+[ 
+  {
+    "stars": ["star #1", "star #2", "star #3"],
+    "directors": ["director #1", "director #2", "director #3"],
+    "genres": ["genre #1", "genre #2", "genre #3"]
+  }
+]

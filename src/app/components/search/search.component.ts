@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,14 +9,26 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchComponent {
   movieTitle = "";
+  searchResult: any[] = [];
 
   // @Input() movieTitle!: string;
 
-  constructor(private _activatedRoute: ActivatedRoute) {
+  constructor(private _activatedRoute: ActivatedRoute, private httpClient: HttpClient) {
     this._activatedRoute.params.subscribe((p) => {
       this.movieTitle = p["movieTitle"];
     })    
 
+  }
+
+  ngOnInit(): void {
+    this.searchMovies();
+  }
+
+  searchMovies() {
+    this.httpClient.get<any[]>('assets/data/movieSearch.json')
+    .subscribe((data:any[]) => {
+      this.searchResult = data;
+    });
   }
   
   
