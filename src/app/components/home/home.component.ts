@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { catchError, of } from 'rxjs';
 import { MoviesService } from 'src/app/services/movies.service';

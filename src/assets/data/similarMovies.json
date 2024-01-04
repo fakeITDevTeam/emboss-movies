@@ -1,30 +1,30 @@
 [
   {
-    "imageUrl": "../../../assets/images/card-image.png",
+    "imageUrl": "../../../assets/images/ghibli_the.wind.rises.01.png",
     "title": "Movie #1 title",
     "rate": 9.5
   },
 
   {
-    "imageUrl": "../../../assets/images/card-image.png",
+    "imageUrl": "../../../assets/images/ghibli_porco.rosso.01.png",
     "title": "Movie #2 title",
     "rate": 9.5
   },
 
   {
-    "imageUrl": "../../../assets/images/card-image.png",
+    "imageUrl": "../../../assets/images/ghibli_whisper.of.the.heart.png",
     "title": "Movie #3 title",
     "rate": 9.5
   },
 
   {
-    "imageUrl": "../../../assets/images/card-image.png",
+    "imageUrl": "../../../assets/images/ghibli_only.yesterday.png",
     "title": "Movie #4 title",
     "rate": 9.5
   },
 
   {
-    "imageUrl": "../../../assets/images/card-image.png",
+    "imageUrl": "../../../assets/images/ghibli_howls.moving.castle.01.png",
     "title": "Movie #5 title",
     "rate": 9.5
   }
