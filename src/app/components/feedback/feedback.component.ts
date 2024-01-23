@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Feedback } from 'src/app/data/model/Feedback';
 
 @Component({
@@ -12,17 +12,17 @@ export class FeedbackComponent implements OnInit {
   // feedback: Feedback = new Feedback('','',8,'','');
   feedbackForm!: FormGroup;
     
-  constructor(private fb: FormBuilder) {
+  constructor() {
         
   }
 
   ngOnInit(): void {
-    this.feedbackForm = this.fb.group({
-      emailAddress: [''],
-      phoneNumber: [''],
-      rate: [8],
-      feedbackTitle: [''],
-      feedback: ['']
+    this.feedbackForm = new FormGroup({
+      emailAddress: new FormControl('', [Validators.required, Validators.email]),
+      phoneNumber: new FormControl('', [Validators.pattern('[0-9]{4}-[0-9]{4}')]),
+      rate: new FormControl(8, [Validators.min(0), Validators.max(10)]),
+      feedbackTitle: new FormControl('', [Validators.required]),
+      feedback: new FormControl('', [Validators.required])
     })
   }
 
